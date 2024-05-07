@@ -1,0 +1,2 @@
+# venvLiceo
+entorno virtual
