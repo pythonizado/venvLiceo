@@ -1,0 +1,44 @@
+*{
+    background-color:whitesmoke;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    color: rgb(7, 98, 98);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contenedor{
+    
+    width: 100%;
+    max-width: 1000px;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+button{
+    border: 0cm;
+    background-image: linear-gradient() #959595, #5AA, #0155 ;
+    border-radius: 8px;
+    color:#ffffff;
+    display: flex;
+    padding: 4px;
+    cursor: pointer;
+    transition: 3ms;
+   
+   }
+
+button span{
+    background-color: #04b0b6;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: 3ms;
+ }
+
+ button:hover span{
+    background: #959595;
+   }
+    
+   button:active{
+    transform: scale(1.2); 
+   }

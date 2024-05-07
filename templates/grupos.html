@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/layout.css')}}">
+    <title>Grupos</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Datos del grupo</h1>
+        <ul class="list-group">  
+            
+                
+            {% for i in datos %}
+                {{i}} <br>
+            <li class="list-group-item">    
+                <form action="{{ url_for('updateSaldo') }}" method="post">
+                    <input type="text" name="s">
+                    <input type="hidden" name ="i" value={{i[1]}} >
+                    <input type="hidden" name ="g" value={{i[2]}} >
+                    <button><span>Actualizar</span></button> 
+                    <br><br>
+                </form>    
+                {% endfor %}
+                
+            </li>
+            
+        </ul>
+    </div> 
+
+</body>
+</html>

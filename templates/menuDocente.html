@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/layout.css')}}">
+    <title>Grupos</title>
+</head>
+<body>
+    <div class="contenedor">
+    <h1>Seleccione el grupo</h1>
+    <form action="{{ url_for('grupo') }}" method="post">
+        <label>Grupo 9 colegio del huerto</label>
+        <button type="text" name="1" value="1"><span>9 colegio</span></button>
+    </form>
+    <form action="{{ url_for('grupo') }}" method="post">
+        <label>Grupo 9º 3 Liceo 3</label>
+        <button type="text" name="1" value="2"><span>9º 3</span></button>
+    </form>
+    <form action="{{ url_for('grupo') }}" method="post">
+        <label>Grupo 9º 2 Liceo 3</label>
+        <button type="text" name="1" value="3" ><span>9º 2</span></button>    
+    </form>
+    <form action="{{ url_for('grupo') }}" method="post">
+        <label>Grupo 9º 1 Liceo 3</label>
+        <button type="text" name="1" value="4" ><span>9º 1 </span></button>
+    </form>
+</div>
+</body>
+</html>
